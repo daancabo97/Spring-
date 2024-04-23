@@ -7,25 +7,25 @@
     </head>
     <body>
         <h1>Inicio</h1>
-        <p th:text="${mensaje}"></p>
-        <p th:text="${saludo}"></p>
-        <br/>
-
         <div th:if="${personas != null and !personas.empty}">
-
             <table border="1">
-                <caption>Información de la persona</caption>
                 <tr>
                     <th>Nombre:</th>
                     <th>Apellido:</th>
                     <th>Email:</th>
                     <th>Celular:</th>
+                    <th>Genero:</th>
+                    <th>Ocupacion:</th>
+                    <th>Nacionalidad:</th>
                 </tr> 
                 <tr th:each="persona : ${personas}">
                     <td th:text="${persona.nombre}">Mostrar Nombre</td>
                     <td th:text="${persona.apellido}">Mostrar Apellido</td>          
                     <td th:text="${persona.email}">Mostrar Email</td>            
-                    <td th:text="${persona.celular}">Mostrar Celular</td>            
+                    <td th:text="${persona.celular}">Mostrar Celular</td>
+                    <td th:text="${persona.genero}">Mostrar Genero</td>   
+                    <td th:text="${persona.ocupacion}">Mostrar Ocupacion</td>   
+                    <td th:text="${persona.nacionalidad}">Mostrar Nacionalidad</td>   
                 </tr>
             </table> 
         </div>
