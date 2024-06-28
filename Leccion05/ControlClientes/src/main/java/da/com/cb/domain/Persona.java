@@ -1,7 +1,7 @@
 package da.com.cb.domain;
 
-import java.io.Serializable;
 import javax.persistence.Entity;
+import java.io.Serializable;
 import javax.persistence.*;
 import lombok.Data;
 
@@ -14,12 +14,13 @@ public class Persona implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idPersona;
     private String nombre;
+    private Integer edad;
+    private String genero;
+    private String ocupacion;
+    private String nacionalidad;
     private String apellido;
-    private String email;
     private String celular;
-    private String genero; 
-    private String ocupacion; 
-    private String nacionalidad; 
+    private String email;
 }

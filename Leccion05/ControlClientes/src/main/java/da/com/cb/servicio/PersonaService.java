@@ -1,7 +1,7 @@
 package da.com.cb.servicio;
 
-import da.com.cb.domain.Persona;
 import java.util.List;
+import da.com.cb.domain.Persona;
 
 public interface PersonaService {
     
