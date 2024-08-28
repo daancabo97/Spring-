@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Plantilla</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <header th:fragment="header">
+            <h1 th:text="#{plantilla.titulo}"></h1>
+        </header>
+        
+        <footer th:fragment="footer">
+            <p> [[#{plantilla.pie-pagina}]] <a href="http://www.globalmentoring.com.mx" target="_blank">GlobalMentoring.com.mx</a></p>
+            <p th:text="#{plantilla.pie-pagina}"> <a href="http://www.globalmentoring.com.mx" target="_blank">GlobalMentoring.com.mx</a></p>
+        </footer>
+        
+    </body>
+</html>
